@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html
+  body {
+    height: 100%;
+    min-height: 100vh;
+  }
+  
+  body {
+    color: #333;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #59abe3;
+  }
+  
+  main {
+    flex: 1 0 auto;
+  }
+  
+  .center {
+    margin: auto;
+  }
+  
+  #content {
+    position: relative;   
+    top: 100px; 
+    padding-bottom: 10%;
+  }
+
+  #innerBorder {
+    border-style: none;
+    background-color: white;
+    text-align: left;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  #innerBorder p {
+    font-size: 20px;
+  }

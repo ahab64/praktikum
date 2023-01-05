@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DB Praktikum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navbar.js" type="text/javascript" defer></script>
+  </head>
+
+  <body>
+    <header-component></header-component>
+    <navbar-component></navbar-component>
+    <div class="conatiner center wrapper col-3 mt-5">
+      <input
+        id="search-input"
+        type="text"
+        class="form-control mb-5 mt-5 p-3"
+        placeholder="Praktikumsthemen durchsuchen..."
+        style="text-align: center"
+      />
+      <div class="overlay">
+        <ul
+          id="topics-list"
+          class="list-group list-group-flush text-primary h5"
+        >
+          <li class="list-group-item p-3">
+            <a href="components/workshop-java-component/workshop-java-component.html">Java Workshop</a>
+          </li>
+          <li class="list-group-item p-3">
+            <a href="#">Präsentationstechniken</a>
+          </li>
+          <li class="list-group-item p-3">
+            <a href="#">Webseiten Workshop</a>
+          </li>
+          <li class="list-group-item p-3">
+            <a href="#">Präsentations Workshop</a>
+          </li>
+          <li class="list-group-item p-3">
+            <a href="#">IT Grundlagen Workshop</a>
+          </li>
+          <li class=" overlay list-group-item p-3">
+            <a href="#">Kennenlernen</a>
+          </li>
+        </ul>
+      </div>
+      <div id="imageSlider" class="overlay">
+        <body>
+          <div id="canvas">
+            <div class="arrow">
+              <img id="left" src="./images/left-arrow.png" class="image" />
+            </div>
+            <div class="arrow">
+              <img id="right" src="./images/right-arrow.png" class="image" />
+            </div>
+          </div>
+        </body>
+      </div>
+    </div>
+
+    <footer-component></footer-component>
+    <script src="index.js"></script>
+  </body>
+  <html></html>
+</html>
